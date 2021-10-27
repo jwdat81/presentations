@@ -1,74 +1,665 @@
 <!doctype html>
 <html lang="en">
+  
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - Video, Audio and Iframes</title>
+		<title>reveal.js – American National Government</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+		<script src="../reveal.js/dist/reveal.js"></script>
+        <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+	<script src="../reveal.js-plugins/menu/menu.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+	<script>
+    Reveal.initialize({
+        // ...
+              audio: {
+	          	prefix: 'audio/', 	// audio files are stored in the "audio" folder
+		          suffix: '.ogg',		// audio files have the ".ogg" ending
+		          textToSpeechURL: null,  // the URL to the text to speech converter
+		          defaultNotes: false, 	// use slide notes as default for the text to speech converter
+	          	defaultText: false, 	// use slide text as default for the text to speech converter
+	           	advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+	          	autoplay: false,	// automatically start slideshow
+	          	defaultDuration: 5,	// default duration in seconds if no audio is available
+	          	defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+	          	playerOpacity: 0.05,	// opacity value of audio player if unfocused
+	          	playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+	          	startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+            	},        
+            	// ...
+              });
+</script>
+  
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 
 	<body>
+	  
+	  <div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
-		<div class="reveal">
+				<section  data-transition="zoom-in fade-out">
 
-			<div class="slides">
-
-				<section>
-					<h2>Examples of embedded Video, Audio and Iframes</h2>
+						
+					<h3> American National Government </h3>
+					<p>
+						<small> Dr. John D'Attoma </small>
+					</p>
+					<a href="mailto:johndattoma@gmail.com"><button><small> johndattoma@gmail.com </small> </a>
+					<p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ZwMVMbmQBug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p>
+					<audio src="presentations/examples/assets/test.wav" data-autoplay></audio>
 				</section>
 
-				<section>
-					<h2>Iframe</h2>
-					<iframe data-autoplay width="700" height="540" src="https://slides.com/news/auto-animate/embed" frameborder="0"></iframe>
+				
+				<section data-transition="zoom-in fade-out">
+					<h2>What is politics?</h2>
+					<p>
+					<ul>
+  <li class="fragment">Power or one side's ability to get another side to do what they would otherwise not do;</li>
+  <li class="fragment"> Who controls resources;</li>
+  <li class="fragment"> Represents the art of science and governing</li>
+         </ul>
+         
+         </section>
+			
+
+				<section data-transition="zoom-in fade-out">
+					<h2>What is American Exceptionalism?</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/eCEu-WWgB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 				</section>
 
-				<section data-background-iframe="https://www.youtube.com/embed/h1_nyI3z8gI" data-background-interactive>
-					<h2 style="color: #fff;">Iframe Background</h2>
-				</section>
 
-				<section>
-					<h2>Video</h2>
-					<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" data-autoplay></video>
-				</section>
+				<section data-transition="zoom-in fade-out">
+					<h2>American Exceptionalism</h2>
+					<p>
+					<ul>
+  <li class="fragment">IS THE UNITED STATES OF AMERICA EXCEPTIONAL?</li>
+  <ul>
+  <li class="fragment"> Why?</li>
+  <ul>
+  <li class="fragment"> Manfiest destiny?</li>
+   <li class="fragment"> Remarkable leaders who learned from history?</li>
+         </ul>
+  </li>
+   </ul>
+         
+         </section>
 
-				<section data-background-video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
-					<h2>Background Video</h2>
-				</section>
+         <section data-transition="zoom-in fade-out">
+					<h2>How Do We Study Politics?</h2>
+					<p>
+					<h3>We will Use:<p>  <span class="fragment highlight-red">American Political Development (APD)</span></h3>
+					<p>
+					<p class="fragment fade-in-then-out">Others Include:</p>
+					<p class="fragment fade-in-then-out">Critical Theory</p>
+					<p class="fragment fade-in-then-out">Experimental Methods</p>
+					<p class="fragment fade-in-then-out">Gender</p>
+					<p class="fragment fade-in-then-out">Law and Politics</p>
+					<p class="fragment fade-in-then-out">Public Opinion</p>
+         
+         </section>
 
-				<section>
-					<h2>Auto-playing audio</h2>
-					<audio src="assets/beeping.wav" data-autoplay></audio>
-				</section>
 
-				<section>
-					<h2>Audio inside slide fragments</h2>
-					<div class="fragment">
-						Beep 1
-						<audio src="assets/beeping.wav" data-autoplay></audio>
+
+         <section data-transition="zoom-in fade-out">
+					<h2>American Political Development</h2>
+					<p>
+					<ul>
+  <li class="fragment">American Political Development: The study of American politics from a historical perspective.</li>
+  <li class="fragment"> Institutions: An established law, custom, usage, practice, organization, or other element in the political and social life of people.
+ </li>
+         </ul>
+         
+         </section>
+
+         <section data-transition="zoom-in fade-out">
+					<h2>WHAT ARE INSTITUTIONS?</h2>
+					<p>
+					<ul>
+  <li class="fragment">An established law, custom, usage, practice, organization, or other element in the political and social life of people.</li>
+  <ul>
+  <li 	<span class="fragment">Formal Institutions: </span> <span class="fragment">Congress, Courts, Executive, Police, Laws, etc...</span> </li>
+  <li 	<span class="fragment">Informal Institutions: </span> <span class="fragment">Our social norms, values, etc...</span> </li>
+  <ul>
+         
+         </section>
+
+    	<section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">The Greeks: organize the polis (community) and to foster excellence</li>
+  <li class="fragment"> Plato: Philospher-King: strong leader who knows the meaning of justice and acts justly</li>
+  <li class="fragment"> Aristotle: What types of governments exist and which type would work the best under most circumstances?</li>
+         </ul>
+         
+         </section>
+
+
+    <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">Monarchy: ruled by one man</li>
+  <li class="fragment"> Aristocracy: ruled by a few men</li>
+  <li class="fragment"> Democracy: the well-intentioned many; the constitution</li>
+    <li class="fragment"> Oligarchy: the rich, also being the few, also rule the state</li>
+
+         <ul>
+  <li class="fragment"> oligarchy and democracy can be fused to create a well-functioning government or polity.</li>
+</ul>
+</ul>
+         </section>
+
+
+         <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">The Romans: Political and legal institutions</li>
+  <li class="fragment"> Polybius: Separation of powers and checks and balances.</li>
+  <li class="fragment"> Cicero: Political legitimacy flowed from the informed consent of the individual. Service to one’s community is the highest human purpose.
+ </li>
+         </ul>
+         
+         </section>
+
+
+          <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">The Middle Ages: The secular serves the sacred</li>
+  <ul>
+  <li class="fragment"> The secular world should be there to facilitate religion.</li>
+  <li class="fragment"> The goal of politics should be to maintain the peace.
+ </li>
+ <li class="fragment"> Hierarchy was the best way to maintain order.
+ </li>
+         </ul>
+         </ul>
+
+         
+         </section>
+
+         <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">Secularism, Individualism, and the Idea of Progress</li>
+  <ul>
+  <li class="fragment"> Niccolo Machiavelli: replace the sacred with the social, political, and economic</li>
+  <li class="fragment"> Political realism</li>
+ <li class="fragment"> The Prince</li>
+         </ul>
+         </ul>
+
+         
+         </section>
+
+         <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">The Age of Reason</li>
+  <ul>
+  <li class="fragment"> Francis Bacon: science and discovery benefit human kind.</li>
+  <li class="fragment"> Thomas Hobbes: Leviathan; War of all, against all!</li>
+ <li class="fragment"> John Locke: no man can be the subject of political power
+without his consent; Social Contract Theory: Only the consent of the governed can produce political legitimacy; life, liberty and the pursuit of happiness.</li>
+<li class="fragment"> Adam Smith: theory of capitalism and markets</li>
+<li class="fragment"> Baron de Montesquieu: Limited government and the
+separation of powers; the scope of government must fit its people and circumstances.
+ </li>
+         </ul>
+         </ul>
+
+         
+         </section>
+
+     <section data-transition="zoom-in fade-out">
+					<h2>Learning from history</h2>
+					<p>
+					<ul>
+  <li class="fragment">The Roots of American Politics</li>
+  <ul>
+  <li class="fragment"> Religious persecution in Europe: King Charles I opposed demands for equality and opportunity.</li>
+  <li class="fragment"> Economic, religious freedom, and vast, free land! (for propertied White men.</li>
+ <li class="fragment"> Space for dissent (for propertied White men)</li>
+<li class="fragment"> Social diversity both ethnic and religious (for propertied
+White men)
+ </li>
+         </ul>
+         </ul>
+
+         
+         </section>
+
+         <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
 					</div>
-					<div class="fragment">
-						Beep 2
-						<audio src="assets/beeping.wav" data-autoplay></audio>
+					<h2 style="margin-top: 20px;">Please Do Your Readings.</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Have a great day, <span style="display: inline-block;" class="fragment fade-left">night,</span><span style="display: inline-block;" class="fragment fade-left">or whatever time of day it is for you.</span></h2>
+				</section>
+				
+
+				<!-- <section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">With animations</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+					</script></code></pre>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
+					</p>
+					<p>
+						(NOTE: Use ctrl + click in Linux.)
+					</p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Founding Fathers</h2>
+					<p>Whw Were They <a href="https://revealjs.com/auto-animate/">George Washington</a>.</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Ben Franklin</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+
+						```html []
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<p>Add the <code>r-fit-text</code> class to auto-size text</p>
+					<h2 class="r-fit-text">FIT TEXT</h2>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck.
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section data-background-iframe="https://hakim.se" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Iframe Backgrounds</h2>
+						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
 					</div>
 				</section>
 
 				<section>
-					<h2>Audio with controls</h2>
-					<audio src="assets/beeping.wav" controls></audio>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
 				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://revealjs.com/speaker-view/">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.on( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
+						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
+						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section> -->
 
 			</div>
 
 		</div>
 
-		<script src="../dist/reveal.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			Reveal.initialize({hash: true});
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
 		</script>
 
 	</body>
