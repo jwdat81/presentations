@@ -1,500 +1,389 @@
 <!doctype html>
 <html lang="en">
-  
 
-	<head>
-		<meta charset="utf-8">
-
-		<title>reveal.js – Week 5 Lecture 2 Voting</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
-		<script src="../reveal.js/dist/reveal.js"></script>
-        <script src="../reveal.js/plugin/markdown/markdown.js"></script>
-	<script src="../reveal.js/plugin/highlight/highlight.js"></script>
-	<script src="../reveal.js-plugins/menu/menu.js"></script>
-	<script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
-	<script src="../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
-	<script src="../reveal.js-plugins/audio-slideshow/recorder.js"></script>
-	<script>
+<head>
+    <meta charset="utf-8">
+    <title>reveal.js – Week 5 Lecture 2 Voting</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme">
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js-plugins/menu/menu.js"></script>
+    <script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+    <script src="../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+    <script src="../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+    <script>
     Reveal.initialize({
         // ...
-              audio: {
-	          	prefix: 'audio/', 	// audio files are stored in the "audio" folder
-		          suffix: '.ogg',		// audio files have the ".ogg" ending
-		          textToSpeechURL: null,  // the URL to the text to speech converter
-		          defaultNotes: false, 	// use slide notes as default for the text to speech converter
-	          	defaultText: false, 	// use slide text as default for the text to speech converter
-	           	advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
-	          	autoplay: false,	// automatically start slideshow
-	          	defaultDuration: 5,	// default duration in seconds if no audio is available
-	          	defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
-	          	playerOpacity: 0.05,	// opacity value of audio player if unfocused
-	          	playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
-	          	startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
-            	},        
-            	// ...
-              });
-</script>
-  
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-
-	<body>
-	  
-	  <div class="reveal">
-		<!-- Any section element inside of this container is displayed as a slide -->
-		<div class="slides">
-
-<section  data-transition="zoom-in fade-out">
-
-						
-					<h3> Voting and Elections </h3>
-					<p>
-						<small> Dr. John D'Attoma </small>
-					</p>
-					<a href="mailto:jdattoma@jccc.edu"<button><small> jdattoma@jccc.edu</small> </a>
-					<p>
-
-
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Voting and Elections</h3>
-					
-			<ul>
-				<li class="fragment"> The ideal for American elections: Prospective Voting.</li>
-			
-				<li class="fragment" style="list-style-type:none"> 
-						<blockquote class="fragment" style="color:black">
-						<small>
-						&ldquo; The people will be represented; they ought therefore to choose the representatives. The requisites in actual representation are that the representatives should sympathize with their constituents; should think as they think, and feel as they feel; and that for these purposes should even be residents among them.&rdquo - George Mason
-				    </small>
-				  </blockquote>
-				  <li class="fragment"> Prospective Voting: Under ideal circumstances, rational voters cast prospective votes for the candidates that offer future policies they prefer. </li>
-		
-			</ul>
-  
-</section>
-	
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>In <em>Perspective Voting</em>  all voters are considered:</h3>
-					
-			<ul>
-			  <li class="fragment">Well informed rational actors.</li>
-			  <li class="fragment">Carefully consider several candidates. </li>
-			  <li class="fragment">Vote for the candidate who will do what the individual voter thinks is best.  </li>
-			 <ul style="list-style-type:none;">
-			  <li> <center><img class="fragment"  src="http://docs.google.com/uc?export=open&id=1kXZ1UIzNafiB590WJtghsW0SqzrB8Woj" style="width:400px;height:400px;"></center></li>
-			</ul>
-			</ul>
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>The Reality of American Elections</h3>
-					
-			<ul>
-			  <li class="fragment">Well informed rational actors.</li>
-			  <li class="fragment">Carefully consider several candidates. </li>
-			  <li class="fragment">Vote for the candidate who will do what the individual voter thinks is best.  </li>
-			</ul>
-</section>
-
-
-<section>
-<video width="100%" height="100%" controls>
-<source src=”https://jwdat81.github.io/presentations/turnout.html” type=video/html>
-</video>     
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>How do Americans participate in politics?</h3>
-					
-			<ul>
-				<li class="fragment"> We take many forms of political participation for granted:</li>
-			<ul>
-				<li class="fragment">Voting </li>
-				<li class="fragment">Contacting officials (calling, writing, emailing)</li>
-				<li class="fragment">Social media</li>
-				<li class="fragment">Petitioning</li>
-				<li class="fragment">Joining political organizations</li>
-				<li class="fragment">Lobbying</li>
-				<li class="fragment">Rallies and protests</li>
-				<li class="fragment">Litigation</li>
-			</ul>
-			</ul>
-  
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Donating to campaings:</h3>
-					
-			<small><ul>
-				<li class="fragment highlight-blue"> 1996: $449 Million (Total)</li>
-				<li class="fragment highlight-red">2000: 650 Million (Total)</li>
-				<li class="fragment highlight-red">2004: $1.1 Billion (Total)</li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1y2WDgx-9_hZTMSrLWjiO1uk6OtbgUkrF" style="float:right;width:100px;height:100px;"> </li>
-			</ul>
-				<li class="fragment highlight-blue">2008: President Obama, $730 million </li>
-				<li>2012</li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=11JJkTMvHO9nSlGibMrDQpJcb4gVIktxu" style="float:right;width:100px;height:100px;"> </li>
-			</ul>
-			<ul>
-				<li class="fragment highlight-blue" >Obama and Romney spent $1 Billion each.</li>
-				<li class=>All candidates spent $7 Billion </li>
-			</ul>
-			<li>2016</li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=12k3h8Fun_AsHQW2leFXiE22_pKYT8WcE" style="float:right;width:100px;height:100px;"> </li>
-			</ul>
-			<ul>
-				<li>Clinton, $1.184 billion</li>
-				<li class="fragment highlight-red">Trump, $616 million</li>
-			</ul>
-			<li>2020</li>
-			<ul style="list-style-type:none" > 
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1gvSbnadxVwdn5Jxk0iyGBr64OSkr17Xk" style="float:right;width:100px;height:100px;"> </li>
-			</ul>
-			<ul>
-				<li class="fragment highlight-blue">Biden, $1.68 billion</li>
-				<li>Trump, $1.9 billion</li>
-				<li>Total Spending, $14 billion</li>
-			</ul>
-			</ul></small>
-  
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Participation that we would like to overlook</h3>
-					
-			<ul>
-				<li class="fragment">Political Corruption: use of government power to serve one’s own interest instead of the public (bribes, extortion, kickbacks, voter fraud, etc…). </li>
-			<ul>
-					<ul style="list-style-type:none" > 
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1xaw6TMEqIW5d1rbhZDlOgQEWGflr2kyj" style="float:right;width:150px;height:150px;"> </li>
-			</ul>
-				<li class="fragment">Rod Blagojevich: Currently serving a sentence for taking bribes for political appointments, including Barak Obama’s senate seat. </li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1JKU4FXZP8CU3OxcTYs4m4M_2NZmquM1k" style="float:right;width:150px;height:150px;"> </li>
-			</ul>
-				<li class="fragment">Jack Abramoff: 4 years for exchanging gifts for political favors. </li>
-			<ul style="list-style-type:none" > 
-				<li class="fragment"> 
-						<blockquote class="fragment" style="color:black">
-						<small>
-						&ldquo; As a lobbyist, I was completely against term limits, and I know a lot of people are against term limits, and I was one of the leaders, because why? As a lobbyist, once you buy a congressional office, you don't have to re-buy that office in six years, right? ... I thought it only natural and right that my clients should reward those members who saved them such substantial sums with generous contributions. This quid pro quo became one of hallmarks of our lobbying efforts ... I mean, money is a tool.&rdquo; 
-				    </small>
-				  </blockquote>
-		 </li>
-		 </ul>
-		 </ul>
-		 </ul>
-  
-</section>
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1TwdExjaJo6dMBERi0EYhpUINUElaurbS" data-background-size="contain">		
-	<h3>Political Corruption and Scandals in states</h3>			
-</section>
-
-<section>
-	<h3>Violence</h3>
-					
-			<ul>
-				<li class="fragment">The U.S. is not immune to political violence.</li>
-			<ul>
-				<li class="fragment">Often driven by economic resentment. </li>
-				<li class="fragment">Often met by government supression.</li>
-			</ul>
-		  </ul>
-		  </ul>
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1P4QyGxVJCsz5rdw0jyN-RUmhw9HWm7im" data-background-size="contain">					
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Violence</h3>
-					
-			<ul>
-				<li>The U.S. is not immune to political violence.</li>
-			<ul>
-				<li class="fragment shrink">Often driven by economic resentment. </li>
-				<li class="fragment shrink">Often met by government supression.</li>
-			</ul>
-				<li class="fragment">Often driven by public policy. </li>
-			<ul>
-				<li class="fragment">Jim Crow</li>
-				<li class="fragment">Civil Rights</li>
-			</ul>
-			</ul>
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1Iz0jwcA8XJ7XWWNJNyhcpebCTdfuxEEO" data-background-size="">					
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1GgPy3ePrQzJGcuorpZoDLIF-hS1DRRjv" data-background-size="contain">					
-</section>
-
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Violence</h3>
-					
-			<ul>
-				<li> The U.S. is not immune to political violence.</li>
-			<ul>
-				<li class="fragment shrink">Often driven by economic resentment. </li>
-				<li class="fragment shrink">Often met by government supression.</li>
-			</ul>
-				<li class="fragment shrink">Often driven by public policy. </li>
-			<ul>
-				<li class="fragment shrink">Jim Crow</li>
-				<li class="fragment shrink">Civil Rights</li>
-			</ul>
-				<li class="fragment">Can be caused by misinfromation and attempt to overthrow the government.</li>
-			</ul>
-		  </ul> 
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1sTZ6tf9sTpThZxpoQYBFHCciBnHyafQZ" data-background-size="contain">					
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-
-</section>
-
-<section>
-	<h3>International and Domestic Terrorism</h3>
-					
-			<ul>
-				<li class="fragment">Oklahoma City</li>
-			<ul>
-				<li class="fragment">Timothy McVeigh </li>
-				<li class="fragment">Worst act of Domestic Terrorism in U.S. history.</li>
-			</ul>
-		  </ul>
-		  </ul>
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1hz36_hol1SqJKTWcfkKqyK_Ekum-9tS_" data-background-size="contain">					
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>International and Domestic Terrorism</h3>
-					
-			<ul>
-				<li class="fragment shrink">Oklahoma City</li>
-			<ul>
-				<li class="fragment shrink">Timothy McVeigh </li>
-				<li class="fragment shrink">Worst act of Domestic Terrorism in U.S. history.</li>
-			</ul>
-				<li class="fragment">911</li>
-			<ul>
-				<li class="fragment">Osama Bid Laden ordered the worst attack on U.S. soil in American history</li>
-			</ul>
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1oDQdV37FBKq2_RFK4NmiWakkFW2nDQhk" data-background-size="">					
-</section>
-
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>International and Domestic Terrorism</h3>
-					
-			<ul>
-				<li class="fragment shrink">Oklahoma City</li>
-			<ul>
-				<li class="fragment shrink">Timothy McVeigh </li>
-				<li class="fragment shrink">Worst act of Domestic Terrorism in U.S. history.</li>
-			</ul>
-				<li class="fragment shrink">911</li>
-			<ul>
-				<li class="fragment shrink">Osama Bid Laden ordered the worst attack on U.S. soil in American history</li>
-			</ul>
-				<li class="fragment">Benghazi</li>
-			<ul>
-				<li class="fragment ">The 2012 Benghazi attack was a coordinated attack against two United States government facilities in Benghazi, Libya, by members of the Islamic militant group Ansar al-Sharia. </li>
-			</ul>
-			</ul>
-</section>
-
-<section 
-data-background="http://docs.google.com/uc?export=open&id=1ULQuS3VLQ2ABnb2cLMAPrEfoKdJa5lFD" data-background-size="contain">					
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-
-
-			
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Who Participates?</h3>
-					
-			<ul>
-				<li class="fragment"> Spectators: Registered voters who mostly vote but otherwise don't participate.</li>
-				<li class="fragment">Serious Players: Contact local officials, contribute money and work for candidates</li>
-				<li class="fragment">Intensive Players join parties, work in campaigns, or run for office. </li>
-			</ul>
-			<ul>
-<div style="width:1000px">
-    	<figure class="fragment" style="float:left">
-    	<img class="top" src="http://docs.google.com/uc?export=open&id=1nKb8IEC-zFrsK1MyA6Baxim1MxYQB83h" width="400" height="300"/>
-    	</figure>
-   	  <figure class="fragment" style="float:right">
-   	  <img class="average" src="http://docs.google.com/uc?export=open&id=1BVEU-PtBBM6ffojH-EcYKD4hLf-CTym0" width="400" height="300"/>
-      </figure>
-</div>
-			</ul>
-  
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Serious and Intensive Don’t Represent You, probably. </h3>
-			<ul>
-				<li class="fragment"> More Partisan and Ideological than average voters.  </li>
-				<li class="fragment"> Enjoy above average incomes and jobs than average. </li>
-				<li class="fragment"> Older than average.  </li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1P-a13JqUk2vp2dLcg7dLCduxGjpgsJbU" style="float:right;width:250px;height:250px;"> </li>
-			</ul>
-				<li class="fragment"> Less often racial minorities.  </li>
-			 	<li class="fragment"> .01% of donor contribute 24% of campaign contributions.  </li>
-    	<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=11UMUMHDl4Fl4FNurOtFL_7uEkR_mBuoW" style="float:center;width:400px;height:400px;"> </li>
-			</ul>
-			</ul>
-  
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Polarization</h3>
-			<ul>
-				<li class="fragment"> Today people are more partisan, ideological, and uncompromising.  </li>
-			<ul style="list-style-type:none" >
-<div style="width:1000px">
-    	<figure class="fragment" style="float:left">
-    	<img class="top" src="http://docs.google.com/uc?export=open&id=1WpPF3FKac1h4I06_8jA97XqwKoJoT2r7" width="400" height="300"/>
-    	</figure>
-   	  <figure class="fragment" style="float:right">
-   	  <img class="average" src="http://docs.google.com/uc?export=open&id=1eWnLI4zudnNEhunt4DcZKb5GyuElrcvw" width="400" height="300"/>
-      </figure>
-</div>	
-			</ul>
-			</ul>
-  
-</section>
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Money is skewed to the extremes. </h3>
-			<ul>
-				<li class="fragment"> Citizens who are partisan, older and better off participate more & give more money. Because they are more partisan, they contribute more to partisan conflicts. They also push candidates to be more partisan.  </li>
-			<ul style="list-style-type:none" >
-				<li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1wEA_fK63jVeZ5PYydWvCSwZ41Oput9Ng" style="float:center;width:600px;height:400px;"> </li>
-			</ul>
-			</ul>
-  
-</section>
-
-
-<section  data-transition="zoom-in fade-out">
-
-	<h3>Back to the Design: It's the Institutions! </h3>
-			<ul>
-				<li class="fragment"> American Government was designed to manage and control participation.  </li>
-			<ul style="list-style-type:none" > 
-				<li class="fragment"> 
-						<blockquote class="fragment" style="color:black">
-						<small>
-						&ldquo; The people should have as little to do as may be about the government. They lack information and are constantly liable to be misled.&rdquo; - Robert Sherman
-				    </small> 
-				  </blockquote>
-		 </li>
-		 </ul>
-		 <ul style="list-style-type:none" > 
-				<li class="fragment"> 
-						<blockquote class="fragment" style="color:black">
-						<small>
-						&ldquo; The evils we experience flow from the excess of democracy. The people do not want virtue, but are the dupes of pretended patriots. &rdquo; - Eldridge Gary
-				    </small> 
-				  </blockquote>
-		 </li>
-		 </ul>
-
-		 <ul> 
-				<li class="fragment"> 
-					The Constitution provides lots of venues to participate, but also many opportunities for your opponents to stop you. </li>
-		 </ul>
-		 </ul>
-  
-</section>
-     
-<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-	<div class="r-hstack justify-center">
-		<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
-			<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;">	
-	</div>
-		
-	<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;">
-		
-	</div>
-	</div>
-		<h2 style="margin-top: 20px;">Please Do Your Readings.</h2>
-</section>
-	
-<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-	<div class="r-stack">
-		<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
-			<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
-				<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"
-	></div>
-	</div>
-		<h2 style="margin-top: 20px;">Have a great day, <span style="display: inline-block;" class="fragment fade-left">night,</span><span style="display: inline-block;" class="fragment fade-left">or whatever time of day it is for you.</span></h2>
-</section>
-				
-
-				<!-- <section data-auto-animate>
+        audio: {
+            prefix: 'audio/', // audio files are stored in the "audio" folder
+            suffix: '.ogg', // audio files have the ".ogg" ending
+            textToSpeechURL: null, // the URL to the text to speech converter
+            defaultNotes: false, // use slide notes as default for the text to speech converter
+            defaultText: false, // use slide text as default for the text to speech converter
+            advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+            autoplay: false, // automatically start slideshow
+            defaultDuration: 5, // default duration in seconds if no audio is available
+            defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+            playerOpacity: 0.05, // opacity value of audio player if unfocused
+            playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+            startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+        },
+        // ...
+    });
+    </script>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-transition="zoom-in fade-out">
+                <h3> Voting and Elections </h3>
+                <p>
+                    <small> Dr. John D'Attoma </small>
+                </p>
+                <a href="mailto:jdattoma@jccc.edu" <button><small> jdattoma@jccc.edu</small> </a>
+                <p>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>Voting and Elections</h3>
+                <ul>
+                    <li class="fragment"> The ideal for American elections: Prospective Voting.</li>
+                    <li class="fragment" style="list-style-type:none">
+                        <blockquote class="fragment" style="color:black">
+                            <small>
+                                &ldquo; The people will be represented; they ought therefore to choose the representatives. The requisites in actual representation are that the representatives should sympathize with their constituents; should think as they think, and feel as they feel; and that for these purposes should even be residents among them.&rdquo - George Mason
+                            </small>
+                        </blockquote>
+                    <li class="fragment"> Prospective Voting: Under ideal circumstances, rational voters cast prospective votes for the candidates that offer future policies they prefer. </li>
+                </ul>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>In <em>Perspective Voting</em> all voters are considered:</h3>
+                <ul>
+                    <li class="fragment">Well informed rational actors.</li>
+                    <li class="fragment">Carefully consider several candidates. </li>
+                    <li class="fragment">Vote for the candidate who will do what the individual voter thinks is best. </li>
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <center><img class="fragment" src="http://docs.google.com/uc?export=open&id=1kXZ1UIzNafiB590WJtghsW0SqzrB8Woj" style="width:400px;height:400px;"></center>
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>The Reality of American Elections</h3>
+                <ul>
+                    <li class="fragment">Well informed rational actors.</li>
+                    <li class="fragment">Carefully consider several candidates. </li>
+                    <li class="fragment">Vote for the candidate who will do what the individual voter thinks is best.</li>
+                    <li class="fragment">Voter turnout is historicallly low compared to other democratic countries;</li>
+                </ul>
+            </section>
+            <section>
+               <a href="https://www.statista.com/statistics/1139251/voter-turnout-in-us-presidential-and-midterm-elections/" rel="nofollow"><img src="https://www.statista.com/graphic/1/1139251/voter-turnout-in-us-presidential-and-midterm-elections.jpg" alt="Statistic: Turnout rates among the voting-eligible population in United States presidential and midterm elections from 1789 to 2020 | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/></a><br />Find more statistics at  <a href="https://www.statista.com" rel="nofollow">Statista</a>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>How do Americans participate in politics?</h3>
+                <ul>
+                    <li class="fragment"> We take many forms of political participation for granted:</li>
+                    <ul>
+                        <li class="fragment">Voting </li>
+                        <li class="fragment">Contacting officials (calling, writing, emailing)</li>
+                        <li class="fragment">Social media</li>
+                        <li class="fragment">Petitioning</li>
+                        <li class="fragment">Joining political organizations</li>
+                        <li class="fragment">Lobbying</li>
+                        <li class="fragment">Rallies and protests</li>
+                        <li class="fragment">Litigation</li>
+                    </ul>
+                </ul>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>Donating to campaings:</h3>
+                <small>
+                    <ul>
+                        <li class="fragment highlight-blue"> 1996: $449 Million (Total)</li>
+                        <li class="fragment highlight-red">2000: 650 Million (Total)</li>
+                        <li class="fragment highlight-red">2004: $1.1 Billion (Total)</li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1y2WDgx-9_hZTMSrLWjiO1uk6OtbgUkrF" style="float:right;width:100px;height:100px;"> </li>
+                        </ul>
+                        <li class="fragment highlight-blue">2008: President Obama, $730 million </li>
+                        <li>2012</li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=11JJkTMvHO9nSlGibMrDQpJcb4gVIktxu" style="float:right;width:100px;height:100px;"> </li>
+                        </ul>
+                        <ul>
+                            <li class="fragment highlight-blue">Obama and Romney spent $1 Billion each.</li>
+                            <li class=>All candidates spent $7 Billion </li>
+                        </ul>
+                        <li>2016</li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=12k3h8Fun_AsHQW2leFXiE22_pKYT8WcE" style="float:right;width:100px;height:100px;"> </li>
+                        </ul>
+                        <ul>
+                            <li>Clinton, $1.184 billion</li>
+                            <li class="fragment highlight-red">Trump, $616 million</li>
+                        </ul>
+                        <li>2020</li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1gvSbnadxVwdn5Jxk0iyGBr64OSkr17Xk" style="float:right;width:100px;height:100px;"> </li>
+                        </ul>
+                        <ul>
+                            <li class="fragment highlight-blue">Biden, $1.68 billion</li>
+                            <li>Trump, $1.9 billion</li>
+                            <li>Total Spending, $14 billion</li>
+                        </ul>
+                    </ul>
+                </small>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>Participation that we would like to overlook</h3>
+                <ul>
+                    <li class="fragment">Political Corruption: use of government power to serve one’s own interest instead of the public (bribes, extortion, kickbacks, voter fraud, etc…). </li>
+                    <ul>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1xaw6TMEqIW5d1rbhZDlOgQEWGflr2kyj" style="float:right;width:150px;height:150px;"> </li>
+                        </ul>
+                        <li class="fragment">Rod Blagojevich: Currently serving a sentence for taking bribes for political appointments, including Barak Obama’s senate seat. </li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1JKU4FXZP8CU3OxcTYs4m4M_2NZmquM1k" style="float:right;width:150px;height:150px;"> </li>
+                        </ul>
+                        <li class="fragment">Jack Abramoff: 4 years for exchanging gifts for political favors. </li>
+                        <ul style="list-style-type:none">
+                            <li class="fragment">
+                                <blockquote class="fragment" style="color:black">
+                                    <small>
+                                        &ldquo; As a lobbyist, I was completely against term limits, and I know a lot of people are against term limits, and I was one of the leaders, because why? As a lobbyist, once you buy a congressional office, you don't have to re-buy that office in six years, right? ... I thought it only natural and right that my clients should reward those members who saved them such substantial sums with generous contributions. This quid pro quo became one of hallmarks of our lobbying efforts ... I mean, money is a tool.&rdquo;
+                                    </small>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1TwdExjaJo6dMBERi0EYhpUINUElaurbS" data-background-size="contain">
+                <h3>Political Corruption and Scandals in states</h3>
+            </section>
+            <section>
+                <h3>Violence</h3>
+                <ul>
+                    <li class="fragment">The U.S. is not immune to political violence.</li>
+                    <ul>
+                        <li class="fragment">Often driven by economic resentment. </li>
+                        <li class="fragment">Often met by government supression.</li>
+                    </ul>
+                </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1P4QyGxVJCsz5rdw0jyN-RUmhw9HWm7im" data-background-size="contain">
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>Violence</h3>
+                <ul>
+                    <li>The U.S. is not immune to political violence.</li>
+                    <ul>
+                        <li class="fragment shrink">Often driven by economic resentment. </li>
+                        <li class="fragment shrink">Often met by government supression.</li>
+                    </ul>
+                    <li class="fragment">Often driven by public policy. </li>
+                    <ul>
+                        <li class="fragment">Jim Crow</li>
+                        <li class="fragment">Civil Rights</li>
+                    </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1Iz0jwcA8XJ7XWWNJNyhcpebCTdfuxEEO" data-background-size="">
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1GgPy3ePrQzJGcuorpZoDLIF-hS1DRRjv" data-background-size="contain">
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>Violence</h3>
+                <ul>
+                    <li> The U.S. is not immune to political violence.</li>
+                    <ul>
+                        <li class="fragment shrink">Often driven by economic resentment. </li>
+                        <li class="fragment shrink">Often met by government supression.</li>
+                    </ul>
+                    <li class="fragment shrink">Often driven by public policy. </li>
+                    <ul>
+                        <li class="fragment shrink">Jim Crow</li>
+                        <li class="fragment shrink">Civil Rights</li>
+                    </ul>
+                    <li class="fragment">Can be caused by misinfromation and attempt to overthrow the government.</li>
+                </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1sTZ6tf9sTpThZxpoQYBFHCciBnHyafQZ" data-background-size="contain">
+            </section>
+            <section data-transition="zoom-in fade-out">
+            </section>
+            <section>
+                <h3>International and Domestic Terrorism</h3>
+                <ul>
+                    <li class="fragment">Oklahoma City</li>
+                    <ul>
+                        <li class="fragment">Timothy McVeigh </li>
+                        <li class="fragment">Worst act of Domestic Terrorism in U.S. history.</li>
+                    </ul>
+                </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1hz36_hol1SqJKTWcfkKqyK_Ekum-9tS_" data-background-size="contain">
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>International and Domestic Terrorism</h3>
+                <ul>
+                    <li class="fragment shrink">Oklahoma City</li>
+                    <ul>
+                        <li class="fragment shrink">Timothy McVeigh </li>
+                        <li class="fragment shrink">Worst act of Domestic Terrorism in U.S. history.</li>
+                    </ul>
+                    <li class="fragment">911</li>
+                    <ul>
+                        <li class="fragment">Osama Bid Laden ordered the worst attack on U.S. soil in American history</li>
+                    </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1oDQdV37FBKq2_RFK4NmiWakkFW2nDQhk" data-background-size="">
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3>International and Domestic Terrorism</h3>
+                <ul>
+                    <li class="fragment shrink">Oklahoma City</li>
+                    <ul>
+                        <li class="fragment shrink">Timothy McVeigh </li>
+                        <li class="fragment shrink">Worst act of Domestic Terrorism in U.S. history.</li>
+                    </ul>
+                    <li class="fragment shrink">911</li>
+                    <ul>
+                        <li class="fragment shrink">Osama Bid Laden ordered the worst attack on U.S. soil in American history</li>
+                    </ul>
+                    <li class="fragment">Benghazi</li>
+                    <ul>
+                        <li class="fragment ">The 2012 Benghazi attack was a coordinated attack against two United States government facilities in Benghazi, Libya, by members of the Islamic militant group Ansar al-Sharia. </li>
+                    </ul>
+                </ul>
+            </section>
+            <section data-background="http://docs.google.com/uc?export=open&id=1ULQuS3VLQ2ABnb2cLMAPrEfoKdJa5lFD" data-background-size="contain">
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <section data-transition="zoom-in fade-out">
+                    <h3>Who Participates?</h3>
+                    <ul>
+                        <li class="fragment"> Spectators: Registered voters who mostly vote but otherwise don't participate.</li>
+                        <li class="fragment">Serious Players: Contact local officials, contribute money and work for candidates</li>
+                        <li class="fragment">Intensive Players join parties, work in campaigns, or run for office. </li>
+                    </ul>
+                    <ul>
+                        <div style="width:1000px">
+                            <figure class="fragment" style="float:left">
+                                <img class="top" src="http://docs.google.com/uc?export=open&id=1nKb8IEC-zFrsK1MyA6Baxim1MxYQB83h" width="400" height="300" />
+                            </figure>
+                            <figure class="fragment" style="float:right">
+                                <img class="average" src="http://docs.google.com/uc?export=open&id=1BVEU-PtBBM6ffojH-EcYKD4hLf-CTym0" width="400" height="300" />
+                            </figure>
+                        </div>
+                    </ul>
+                </section>
+                <section data-transition="zoom-in fade-out">
+                    <h3>Serious and Intensive Don’t Represent You, probably. </h3>
+                    <ul>
+                        <li class="fragment"> More Partisan and Ideological than average voters. </li>
+                        <li class="fragment"> Enjoy above average incomes and jobs than average. </li>
+                        <li class="fragment"> Older than average. </li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1P-a13JqUk2vp2dLcg7dLCduxGjpgsJbU" style="float:right;width:250px;height:250px;"> </li>
+                        </ul>
+                        <li class="fragment"> Less often racial minorities. </li>
+                        <li class="fragment"> .01% of donor contribute 24% of campaign contributions. </li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=11UMUMHDl4Fl4FNurOtFL_7uEkR_mBuoW" style="float:center;width:400px;height:400px;"> </li>
+                        </ul>
+                    </ul>
+                </section>
+                <section data-transition="zoom-in fade-out">
+                    <h3>Polarization</h3>
+                    <ul>
+                        <li class="fragment"> Today people are more partisan, ideological, and uncompromising. </li>
+                        <ul style="list-style-type:none">
+                            <div style="width:1000px">
+                                <figure class="fragment" style="float:left">
+                                    <img class="top" src="http://docs.google.com/uc?export=open&id=1WpPF3FKac1h4I06_8jA97XqwKoJoT2r7" width="400" height="300" />
+                                </figure>
+                                <figure class="fragment" style="float:right">
+                                    <img class="average" src="http://docs.google.com/uc?export=open&id=1eWnLI4zudnNEhunt4DcZKb5GyuElrcvw" width="400" height="300" />
+                                </figure>
+                            </div>
+                        </ul>
+                    </ul>
+                </section>
+                <section data-transition="zoom-in fade-out">
+                    <h3>Money is skewed to the extremes. </h3>
+                    <ul>
+                        <li class="fragment"> Citizens who are partisan, older and better off participate more & give more money. Because they are more partisan, they contribute more to partisan conflicts. They also push candidates to be more partisan. </li>
+                        <ul style="list-style-type:none">
+                            <li> <img class="fragment" src="http://docs.google.com/uc?export=open&id=1wEA_fK63jVeZ5PYydWvCSwZ41Oput9Ng" style="float:center;width:600px;height:400px;"> </li>
+                        </ul>
+                    </ul>
+                </section>
+                <section data-transition="zoom-in fade-out">
+                    <h3>Back to the Design: It's the Institutions! </h3>
+                    <ul>
+                        <li class="fragment"> American Government was designed to manage and control participation. </li>
+                        <ul style="list-style-type:none">
+                            <li class="fragment">
+                                <blockquote class="fragment" style="color:black">
+                                    <small>
+                                        &ldquo; The people should have as little to do as may be about the government. They lack information and are constantly liable to be misled.&rdquo; - Robert Sherman
+                                    </small>
+                                </blockquote>
+                            </li>
+                        </ul>
+                        <ul style="list-style-type:none">
+                            <li class="fragment">
+                                <blockquote class="fragment" style="color:black">
+                                    <small>
+                                        &ldquo; The evils we experience flow from the excess of democracy. The people do not want virtue, but are the dupes of pretended patriots. &rdquo; - Eldridge Gary
+                                    </small>
+                                </blockquote>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="fragment">
+                                The Constitution provides lots of venues to participate, but also many opportunities for your opponents to stop you. </li>
+                        </ul>
+                    </ul>
+                </section>
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                    <div class="r-hstack justify-center">
+                        <div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+                        <div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;">
+                        </div>
+                        <div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;">
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px;">Please Do Your Readings.</h2>
+                </section>
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                    <div class="r-stack">
+                        <div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+                        <div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+                        <div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+                    </div>
+                    <h2 style="margin-top: 20px;">Have a great day, <span style="display: inline-block;" class="fragment fade-left">night,</span><span style="display: inline-block;" class="fragment fade-left">or whatever time of day it is for you.</span></h2>
+                </section>
+                <!-- <section data-auto-animate>
 					<h2 data-id="code-title">Pretty Code</h2>
 					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
 						import React, { useState } from 'react';
@@ -520,10 +409,10 @@ data-background="http://docs.google.com/uc?export=open&id=1ULQuS3VLQ2ABnb2cLMAPr
 
 						  return (
 						    <div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-						      </button>
+							<p>You clicked {count} times</p>
+							<button onClick={() => setCount(count + 1)}>
+							  Click me
+							</button>
 						    </div>
 						  );
 						}
@@ -533,10 +422,10 @@ data-background="http://docs.google.com/uc?export=open&id=1ULQuS3VLQ2ABnb2cLMAPr
 
 						  return (
 						    <div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-						      </button>
+							<p>You clicked {count} times</p>
+							<button onClick={() => setCount(count + 1)}>
+							  Click me
+							</button>
 						    </div>
 						  );
 						}
@@ -855,32 +744,27 @@ Reveal.on( 'customevent', function() {
 						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 					</p>
 				</section> -->
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
 
-			</div>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+    });
+    </script>
+</body>
 
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-
-			// Also available as an ES module, see:
-			// https://revealjs.com/initialization/
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
-			});
-
-		</script>
-
-	</body>
 </html>
